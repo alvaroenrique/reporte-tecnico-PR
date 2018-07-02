@@ -1,5 +1,21 @@
-<h4>var1 = {{var1}}</h4>
-<h4>var2 = {{var2}}</h4>
-<h4>var3 (var1 x var2) = {{var1 * var2}}</h4>
-<div>Modificar el var1 <input type="text" [(ngModel)]="var1"></div>
-<div>Modificar el var1 <input type="text" [(ngModel)]="var2"></div>
+
+
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-6">
+                <h4>var1 = {{var1}}</h4>
+                <h4>var2 = {{var2}}</h4>
+                <h4>var3 (var1 x var2) = {{var1 * var2}}</h4>
+        </div>
+        <div class="col-6">
+                <mat-form-field class="mat-input">
+                        <input matInput placeholder="Cambiar valor del var1" [(ngModel)]="var1">
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input matInput placeholder="Cambiar valor del var2" [(ngModel)]="var2">
+                    </mat-form-field>
+        </div>
+    </div>
+</div>

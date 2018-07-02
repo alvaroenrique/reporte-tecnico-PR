@@ -8,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  openGit() {
+    window.open('https://github.com/alvaroenrique/reporte-tecnico-PR', '_blank');
+  }
 }

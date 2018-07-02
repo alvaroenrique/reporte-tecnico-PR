@@ -1,8 +1,22 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <app-ejemplo1></app-ejemplo1>
-  <hr>
-  <app-ejemplo2></app-ejemplo2>
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+      <span>Reporte Técnico: Programación Reactiva</span>
+      <span class="example-spacer"></span>
+      <button mat-button (click)="openGit()">
+        GitHub <i class="fab fa-github fa-3x"></i>
+      </button>
+      
+    </mat-toolbar-row>
+</mat-toolbar>
+<div class="container" >
+  <mat-card class="m-4">
+      <app-ejemplo1></app-ejemplo1>
+  </mat-card>
+  <mat-card class="m-4" style="text-align:center">
+    <app-ejemplo2></app-ejemplo2>
+  </mat-card>
 </div>
+
 
 

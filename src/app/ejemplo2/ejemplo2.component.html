@@ -1,4 +1,4 @@
-<button (click)="subscribirse()">Subscribe</button>
-<button (click)="unsubscribe()">Unsubscribe</button>
+<button mat-raised-button (click)="subscribirse()" class="m-4">Subscribe</button>
+<button mat-raised-button (click)="unsubscribe()">Unsubscribe</button>
 
 <p *ngFor="let evento of eventos">{{evento}}</p>
